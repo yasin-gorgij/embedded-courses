@@ -115,7 +115,7 @@ Configure the kernel:
   * This action opens a menu for us to make the only change we want:
     * Enter to **File systems** then **Miscellaneous filesystems** menu and change **SquashFS 4.0 - Squashed file system support** option to `*` by pressing space and then **Exit** to main menu
 
-Now **Save** changes and **Exit** then run `make -j$(nproc)`.
+Now run `make -j$(nproc)`.
 Congratulation! now you have your custom kernel image.
 Copy the kernel and the device tree:
 - `cp /linux/arch/arm64/boot/Image /toolchain/rpi4/bootloader/`

@@ -135,7 +135,7 @@ Configure the kernel:
     };
     ```
 
-Now **Save** changes and **Exit** then run `make -j$(nproc)`.
+Now run `make -j$(nproc)`.
 Congratulation! now you have your custom kernel image.
 Copy the kernel and the device tree:
 - `cp /linux/arch/arm64/boot/Image /toolchain/rpi4/bootloader/`
