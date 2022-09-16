@@ -85,7 +85,7 @@ Now you can exit from the container.
 *U-Boot* creates an intermediate kernel which we call it *bootloader*. it's job is to load the final kernel if we wanted to, which we want here in this project. It also gives us some limited functionalities to work with our target hardware (here, *Raspberry Pi 4*).
 
 Run the *U-Boot* *Docker* container:
-`docker container run --rm -it -v $HOME/dev/artifacts/toolchain:/toolchain u-boot:v2022.04`
+`docker container run --rm -it -v $HOME/dev/artifacts/toolchain:/toolchain u-boot:v2022.07`
 
 Configure and build *U-Boot*:
 - `export CROSS_COMPILE=aarch64-rpi4-linux-gnu-`
@@ -95,7 +95,7 @@ Configure and build *U-Boot*:
 - Make *U-Boot* kernel image (bootloader) `make -j$(nproc)`
 
 After finishing the build process copy *u-boot.bin* to *bootloader* directory:
-- `cp /u-boot-v2022.04/u-boot.bin /toolchain/rpi4/bootloader/`
+- `cp /u-boot-v2022.07/u-boot.bin /toolchain/rpi4/bootloader/`
 
 Now you can exit from the container.
 
